@@ -1,0 +1,94 @@
+ZOMATO PLANNING
+
+
+Pages
+
+-> HOME 
+
+-> Delivery Page
+
+-> Dining Out
+
+-> Night Life Page
+
+
+Auth / Private Pages
+
+-> Profile ( Settings, about, etc )
+
+
+Tech Stack
+
+-> MongoDb as a Database
+
+-> AWS S3 as a block storage
+
+-> Open street map
+
+
+Database planning
+
+-> Orders
+
+-> Users
+
+-> Restaurants
+
+-> Reviews
+
+-> Foods
+
+-> Menus
+
+-> Images
+
+100 Restaurants -> 100 Menus -> 100 Foods -> 100 Reviews
+
+
+Authentication / Authorization
+
+-> JWT ( JSON Web Token )
+
+
+DEPLOYMENT
+
+Git Repo -> CICD -> AWS
+
+
+
+
+
+
+
+
+
+API planning
+
+-> Auth
+
+-> Foods
+
+-> Restaurants
+
+-> Menu
+
+-> Order
+
+-> Payments ( Razorpay )
+
+-> Reviews
+
+-> User
+
+-> Image
+
+
+
+
+
+
+
+
+
+
+
