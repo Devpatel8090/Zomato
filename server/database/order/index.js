@@ -1,13 +1,13 @@
-import  Mongoose from "mongoose";
+import  mongoose from "mongoose";
 
 
-const OrderSchema = new Mongoose.Schema({
+const OrderSchema = new mongoose.Schema({
     user:{
-        type:Mongoose.Types.Object ,
+        type:mongoose.Types.ObjectId ,
         ref:"Users"
     },
     orderDetais:[{
-        food:{type:Mongoose.Types.ObjectId , ref:"Foods"},
+        food:{type:mongoose.Types.ObjectId , ref:"Foods"},
         quantity:{type:Number , required:true},
         paymode:{type:String , required:true},
         status:{type:String , default:"Placed"},
@@ -20,6 +20,10 @@ const OrderSchema = new Mongoose.Schema({
     orderRatings:{
         type:Number, required:true
     }
-});
+},
+    {
+        timestamps:true
+    });
+
 
 export const OrderModel = mongoose.model("Orders", OrderSchema);

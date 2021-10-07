@@ -14,9 +14,12 @@ const ResturantSchema = new mongoose.Schema({
     menuImage:{type:mongoose.Types.ObjectId , ref:"Images"},
     menu:{type:mongoose.Types.ObjectId , ref:"Menus"},
     reviews:{type:mongoose.Types.ObjectId, ref:"Reviews"},
-    photos:{type:mongoose.Types.ObjectId, ref:"Images"},
+    photos:{type:mongoose.Types.ObjectId, ref:"Images"}},
+    {
+        timestamps:true
+    });
     
     
-});
+
 
 export const RestaurantModel = mongoose.model("Resturants",ResturantSchema);
