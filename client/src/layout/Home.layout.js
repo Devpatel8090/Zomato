@@ -12,8 +12,8 @@ const HomeLayout = (props) => {
     <Navbar />
     <FoodaTab />
      {props.children}
-        
     </div>
+    
     </>
     );
 };
